@@ -16,7 +16,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 60px;
+  padding: 10px 120px;
   box-shadow: 4px 4px 18px rgba(67, 62, 62, 0.87),
     -4px -4px 18px rgba(73, 60, 60, 0.87);
   top: 0;
@@ -29,13 +29,13 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  gap: 20px;
+  gap: 30px;
 }
 .navigation {
   color: white;
   text-decoration: none;
-  font-size: 16px;
-  font-weight: bold;
+  font-size: 20px;
+  font-weight: 500;
 }
 .navigation:hover {
   border-bottom: 2px solid #ff7b00;
@@ -43,19 +43,21 @@ body {
 .heroContainer {
   display: grid;
   grid-template-columns: 45% 30%;
-  justify-content: space-between;
+  justify-content: space-around;
   /* margin-top: 70px; */
-  padding: 50px;
+  padding: 50px 0px 50px 50px;
   align-items: center;
   padding-bottom: 80px;
 }
 .heroContainer2 img {
   width: 80%;
+  padding: 30px;
+  /* border-radius: 10px !important; */
 }
 .heroContainer1 {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 40px;
 }
 .heroContainer11 {
   display: flex;
@@ -65,7 +67,8 @@ body {
 .touchWithMe {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  gap: 157px;
 }
 .touchWithMe .icon {
   width: 50px;
@@ -79,7 +82,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 10px 50px;
+  padding: 10px 107px;
   /* align-self: center; */
   background-color: black;
   box-shadow: 4px 4px 18px rgba(67, 62, 62, 0.87),
