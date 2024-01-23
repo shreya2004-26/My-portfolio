@@ -1,5 +1,6 @@
 import React from "react";
 import image from "../assests/images/background1.jpeg";
+import ExperienceCard from "./ExperienceCard";
 const AboutContainer = () => {
   return (
     <>
@@ -9,18 +10,12 @@ const AboutContainer = () => {
           <img src={image} alt="Image" className="aboutImg" />
           <div className="about11">
             <div className="about111">
-              <div className="exp">
-                Experience <br />
-                <span>1+ years experience</span>
-              </div>
-              <div className="exp">
-                Projects <br />
-                <span>20+ Projects</span>
-              </div>
-              <div className="exp">
-                Support <br />
-                <span>Online 24/7</span>
-              </div>
+              <ExperienceCard
+                title={"Experience"}
+                name={"1+ years experience"}
+              />
+              <ExperienceCard title={"Projects"} name={"10+ Projects"} />
+              <ExperienceCard title={"Support"} name={"Online 24/7"} />
             </div>
             <div className="about112">
               <p>
