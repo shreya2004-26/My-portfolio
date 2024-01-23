@@ -1,7 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import TouchWithMe from "./TouchWithMe";
 import Image from "../assests/images/contact-img.1b0b5a50ad6c3e42afb6.jpg";
 const ContactForm = () => {
+  const [fname, setFName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [message, setMessage] = useState("");
+  const handleSubmit = () => {
+    console.log(fname, email, phone, message);
+    setFName("");
+    setEmail("");
+    setPhone("");
+    setMessage("");
+  };
   return (
     <>
       <div className="contact">
@@ -25,6 +36,10 @@ const ContactForm = () => {
                   type="text"
                   placeholder="Enter your Full Name"
                   className="text"
+                  value={fname}
+                  onChange={(e) => {
+                    setFName(e.target.value);
+                  }}
                 />
               </div>
               <div className="c1">
@@ -33,6 +48,8 @@ const ContactForm = () => {
                   type="email"
                   placeholder="Enter email"
                   className="text"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                 />
               </div>
               <div className="c1">
@@ -41,6 +58,8 @@ const ContactForm = () => {
                   type="tel"
                   placeholder="Enter your Phone Number"
                   className="text"
+                  value={phone}
+                  onChange={(e) => setPhone(e.target.value)}
                 />
               </div>
               <div className="c1">
@@ -49,10 +68,12 @@ const ContactForm = () => {
                   type="text"
                   placeholder="Enter your Message"
                   className="text"
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
                 ></textarea>
               </div>
             </div>
-            <button>Send Messages</button>
+            <button onClick={handleSubmit}>Send Messages</button>
           </div>
         </div>
       </div>
