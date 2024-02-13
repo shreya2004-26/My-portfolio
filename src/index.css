@@ -281,6 +281,7 @@ body {
 .c1 input,
 textarea {
   padding: 10px 15px 10px 15px;
+  resize: none;
 }
 .c11 {
   display: flex;
